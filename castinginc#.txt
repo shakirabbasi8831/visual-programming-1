@@ -1,0 +1,13 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        int myInt = 9;
+        double myDouble = myInt; 
+        Console.WriteLine("Implicit Casting: " + myDouble);
+        double anotherDouble = 9.78;
+        int myNewInt = (int)anotherDouble; 
+        Console.WriteLine("Explicit Casting: " + myNewInt);
+    }
+}
