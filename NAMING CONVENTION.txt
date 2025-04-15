@@ -1,0 +1,23 @@
+using System;
+
+namespace VariableScopeDemo
+{
+    class Program
+    {
+       
+      static int globalCounter = 10;
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Global Counter (Before): " + globalCounter);
+            int localCounter = 5;
+
+            Console.WriteLine("Local Counter: " + localCounter);
+            globalCounter += localCounter;
+
+            Console.WriteLine("Global Counter (After): " + globalCounter);
+
+            Console.ReadLine();
+        }
+    }
+}
